@@ -182,7 +182,3 @@ Ce prototype respecte et améliore les exigences de la section 4.1 du TP1 :
 - ✅ Design cohérent avec la charte visuelle gouvernementale
 - ✅ Interface intuitive et accessible
 - ✅ Navigation claire entre toutes les pages avec liens contextuels
-
-## Auteur
-
-Prototype créé pour le cours INF37607-MS - Génie logiciel du commerce électronique
