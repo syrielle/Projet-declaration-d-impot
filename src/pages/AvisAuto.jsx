@@ -105,7 +105,8 @@ function AvisAuto() {
           {/* Revenus pris en compte */}
           <div className="avis-section">
             <h3 className="section-title">Revenus pris en compte</h3>
-            <table className="avis-table">
+            <div className="avis-table-container">
+              <table className="avis-table">
               <thead>
                 <tr>
                   <th>Type de revenu</th>
@@ -127,12 +128,14 @@ function AvisAuto() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
 
           {/* Calcul de l'impôt */}
           <div className="avis-section">
             <h3 className="section-title">Calcul de l'impôt</h3>
-            <table className="avis-table calcul-table">
+            <div className="avis-table-container">
+              <table className="avis-table calcul-table">
               <tbody>
                 {avisData.calculs.map((calcul, index) => (
                   <tr key={index}>
@@ -144,6 +147,7 @@ function AvisAuto() {
                 ))}
               </tbody>
             </table>
+            </div>
           </div>
 
           {/* Résultat final */}

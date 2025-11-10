@@ -391,18 +391,232 @@
   transform: translateY(0);
 }
 
-/* Responsive pour le header */
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablettes (968px et moins) */
 @media (max-width: 968px) {
   .header-content {
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
   }
 
   .nav-menu {
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .btn-logout {
     align-self: flex-end;
+  }
+}
+
+/* Tablettes (768px et moins) */
+@media (max-width: 768px) {
+  .suivi-header {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .content {
+    padding: 1.5rem 1rem;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  /* Tableaux responsive - scroll horizontal */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 600px;
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  /* Timeline responsive */
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -1.5rem;
+  }
+
+  /* Actions */
+  .actions {
+    gap: 0.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-new-declaration {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile (576px et moins) */
+@media (max-width: 576px) {
+  .suivi-header {
+    padding: 0.875rem;
+  }
+
+  .header-content {
+    gap: 0.75rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-menu {
+    gap: 0.5rem;
+  }
+
+  .nav-menu button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .btn-logout {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .content {
+    padding: 1rem 0.75rem;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section {
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Tableaux en mode compact */
+  table {
+    min-width: 500px;
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.6rem 0.4rem;
+  }
+
+  /* Badges plus petits */
+  .badge {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  /* Timeline compacte */
+  .timeline {
+    padding-left: 1.25rem;
+  }
+
+  .timeline-item {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-marker {
+    width: 10px;
+    height: 10px;
+    left: -1.3rem;
+  }
+
+  .timeline-item::after {
+    left: -1.25rem;
+    width: 2px;
+  }
+
+  .timeline-date {
+    font-size: 0.8rem;
+  }
+
+  .timeline-content h5 {
+    font-size: 0.95rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.85rem;
+  }
+
+  /* Actions en colonne sur mobile */
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-new-declaration {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Très petits écrans (400px et moins) */
+@media (max-width: 400px) {
+  .suivi-header {
+    padding: 0.75rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .page-title {
+    font-size: 1.3rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 0.5rem 0.3rem;
   }
 }

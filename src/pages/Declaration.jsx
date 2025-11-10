@@ -187,7 +187,8 @@ function Declaration() {
           <div className="section">
             <h3 className="section-title">Revenus de l'année 2024</h3>
 
-            <table className="revenus-table">
+            <div className="revenus-table-container">
+              <table className="revenus-table">
               <thead>
                 <tr>
                   <th>Type de revenu</th>
@@ -247,6 +248,7 @@ function Declaration() {
                 </tr>
               </tfoot>
             </table>
+            </div>
 
             <button className="btn-add" onClick={addRevenu}>
               + Ajouter une ligne
